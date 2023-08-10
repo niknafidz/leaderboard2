@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Race Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="background">
+    <img class="img-race" src="race.png" alt="">
+    <h1>Race Leaderboard</h1>
+    <table id="race-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Total Time</th>
+                <th>Lap Time</th>
+                <th>Lap Round</th>
+            </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</div>
+</body>
+
+<style>
+    .background {
+        background-image: url("motorcross.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #race-table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    #race-table th, #race-table td {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 8px;
+        text-align: center;
+    }
+
+    #race-table th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+</html>
